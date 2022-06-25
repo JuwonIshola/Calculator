@@ -1,21 +1,26 @@
-let num1 = parseFloat(prompt("Enter first number: "));
 
-let num2 = parseFloat(prompt("Enter second number: "));
+let first_input = parseInt(prompt("What is your first number?"));
+    let second_input = parseInt(prompt("What is your second number?"));
+    let operator = prompt("What is your operator?")
 
-let operator = prompt("Choose operator: +, -, /, *...");
-
-if (operator === "+") {
-  result = num1 + num2;
-  console.log(`${num1} ${operator} ${num2} equals ${result}`);
-} else if (operator === "-") {
-  result = num1 - num2;
-  console.log(`${num1} ${operator} ${num2} equals ${result}`);
-} else if (operator === "*") {
-  result = num1 * num2;
-  console.log(`${num1} ${operator} ${num2} equals ${result}`);
-} else if (operator === "/") {
-  result = num1 / num2;
-  console.log(`${num1} ${operator} ${num2} equals ${result}`);
-} else {
-  console.log("Enter valid operator");
+    if (operator === "+") {
+        let addition = first_input+second_input;
+        alert(`Your answer ${name} is ${addition}`)
+    } else if (operator === "-") {
+        let subtraction = first_input-second_input;
+        alert(`Your answer ${name} is ${subtraction}`)
+    } else if (operator === "/") {
+        let division = first_input/second_input;
+        alert(`Your answer ${name} is ${division}`)
+    } else if (operator === "%") {
+        let remainder = first_input%second_input;
+        alert(`Your answer ${name} is ${remainder}`)
+    } else if (operator === "*") {
+        let multiplication = first_input*second_input;
+        alert(`Your answer ${name} is ${multiplication}`)
+    } else {
+        alert(msg);
+    }
 }
+
+Calculator()
