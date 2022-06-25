@@ -21,6 +21,5 @@ let first_input = parseInt(prompt("What is your first number?"));
     } else {
         alert(msg);
     }
-}
 
 Calculator()
